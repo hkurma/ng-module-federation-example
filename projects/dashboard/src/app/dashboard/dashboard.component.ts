@@ -7,6 +7,16 @@ import { Component, ViewChild, ViewContainerRef } from '@angular/core';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent {
+  actions = [
+    {
+      label: 'Chart',
+      component: 'ChartComponent',
+    },
+    {
+      label: 'KPI',
+      component: 'KpiComponent',
+    },
+  ];
   @ViewChild('widgetContainer', { read: ViewContainerRef, static: true })
   widgetContainer!: ViewContainerRef;
 

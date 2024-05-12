@@ -1,8 +1,17 @@
-<h1>Dashboard</h1>
-
+<h4>Dashboard</h4>
+<hr />
+<p>
+  This is <code>DashboardComponent</code>, which is loaded from a remote module
+  present in <code>Dashboard</code> application.
+</p>
 <div class="actions">
-  <button (click)="addWidget('ChartComponent')">Add Chart</button>
-  <button (click)="addWidget('KpiComponent')">Add KPI</button>
+  <button
+    *ngFor="let action of actions"
+    class="btn btn-primary"
+    (click)="addWidget(action.component)">
+    Add {{ action.label }}
+  </button>
 </div>
-
-<ng-container #widgetContainer></ng-container>
+<div class="widgets">
+  <ng-container #widgetContainer></ng-container>
+</div>

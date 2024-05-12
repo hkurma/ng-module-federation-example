@@ -12,7 +12,7 @@ This project contains 3 applications
 - Dashboard
 - Widgets
 
-Portal application has routes `/home`, which loads `HomeComponent` and `/dashboard`, which lazy loads a remote module named `DashboardModule` from Dashboard application. Dashboard application has an action, which loads a remote component based on the type (`ChartComponent/KpiComponent`) from Widgets application and renders it.
+Portal application has routes `/home` which loads `HomeComponent` and `/dashboard` which lazy loads a remote module named `DashboardModule` from Dashboard application. Dashboard application has an action, which loads a remote component based on the type (`ChartComponent/KpiComponent`) from Widgets application and renders it.
 
 ## Running this project
 
