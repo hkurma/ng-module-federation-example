@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "build": "ng build portal && ng build dashboard && ng build widgets",
     "test": "ng test",
     "dev": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js",
     "lint": "ng lint",

@@ -17,7 +17,7 @@
         "build": {
           "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/portal",
+            "outputPath": "dist",
             "index": "projects/portal/src/index.html",
             "main": "projects/portal/src/main.ts",
             "polyfills": ["zone.js"],
