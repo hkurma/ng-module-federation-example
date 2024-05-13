@@ -23,7 +23,7 @@ export class DashboardComponent {
   addWidget(name: string) {
     loadRemoteModule({
       type: 'module',
-      remoteEntry: 'http://localhost:4202/remoteEntry.js',
+      remoteEntry: `${window.location.hostname === 'localhost' ? 'http://localhost:4202' : '/widgets'}/remoteEntry.js`,
       exposedModule: name,
     }).then(m => {
       this.widgetContainer.createComponent(m[name]);

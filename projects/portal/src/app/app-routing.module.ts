@@ -18,7 +18,7 @@ const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:4201/remoteEntry.js',
+        remoteEntry: `${window.location.hostname === 'localhost' ? 'http://localhost:4201' : '/dashboard'}/remoteEntry.js`,
         exposedModule: 'DashboardModule',
       }).then(m => m.DashboardModule),
   },
